@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essay — Chris Dai</title>
+  <meta name="description" content="An essay by Chris Dai." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Chris&nbsp;Dai</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+        <button class="nav-toggle" data-nav-toggle aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="article container narrow">
+      <a href="blog.html" class="back-link">&larr; All essays</a>
+      <div class="article-head">
+        <div class="post-date" id="article-date"></div>
+        <h1 id="article-title">Loading&hellip;</h1>
+        <div class="post-tags" id="article-tags"></div>
+      </div>
+      <div class="article-body" id="article-body">
+        <p class="muted">Loading essay&hellip;</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span data-year>2026</span> Chris Dai. Built with care on GitHub Pages.</span>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/chiandai" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:chris.dai2023@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog.js"></script>
+  <script>renderArticle();</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Chris Dai</title>
+  <meta name="description" content="Get in touch with Chris Dai." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Chris&nbsp;Dai</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+        <button class="nav-toggle" data-nav-toggle aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk</h1>
+        <p>Whether it's a role, a project, a photo commission or just a conversation — I'd love to hear from you.</p>
+      </div>
+    </div>
+
+    <div class="container narrow" style="padding-bottom:80px;">
+      <div class="contact-grid reveal">
+        <a class="contact-card" href="mailto:chris.dai2023@outlook.com">
+          <span class="ic">&#9993;</span>
+          <span><span class="l">Email</span><br /><span class="v">chris.dai2023@outlook.com</span></span>
+        </a>
+        <a class="contact-card" href="tel:+64225158869">
+          <span class="ic">&#128222;</span>
+          <span><span class="l">Phone</span><br /><span class="v">022 515 8869</span></span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/chiandai" target="_blank" rel="noopener">
+          <span class="ic">&#128188;</span>
+          <span><span class="l">LinkedIn</span><br /><span class="v">in/chiandai</span></span>
+        </a>
+        <div class="contact-card">
+          <span class="ic">&#128205;</span>
+          <span><span class="l">Location</span><br /><span class="v">Auckland, New Zealand</span></span>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <h2 style="font-size:1.5rem; margin-bottom:16px;">Send a message</h2>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Write your message&hellip;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="form-note" class="muted" style="margin-top:14px; font-size:0.9rem;"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span data-year>2026</span> Chris Dai. Built with care on GitHub Pages.</span>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/chiandai" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:chris.dai2023@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
