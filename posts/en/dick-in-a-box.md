@@ -1,0 +1,19 @@
+November 28th is a day I will not forget. Two years ago on this day, you spent a happy evening with your friends, and I noted your birthday from your posts. A year ago today, we had agreed to watch a film together in the afternoon, and I stood you up; the gift I gave you disappointed you too. And yet, in this third year, someone as thoroughly hopeless as I am still wants to strike up a conversation with you on this day:
+
+Happy birthday, Yuyu.
+
+And here's a present for you: the present is me.
+
+Dick in a box (x
+
+People often say that time's result is forgetting and healing, the withering and disenchantment of love — "fleeting time is like the cavalry of Attila; wherever it passes, love is laid waste." In the first days of heartbreak the pain is such that you can't eat or drink; a few months on, the memory of the relationship is usually pushed down into some corner too faint to notice, except when it ambushes you out of nowhere in the middle of the night. This once was the sole exception.
+
+Time — ten months and two weeks of it, now fast, now slow — only made me clearer and more resolute. I realized clearly that, without your participation, my life is destined for tragedy, and worse still, a tragedy that is not grand but rather without any meaning at all. Your story and mine fit the classic narrative of "the woman who guides the man upward." I have always been a self-sufficient, overly self-absorbed person, almost incapable of being directly influenced by anyone other than my parents. But every day with you was a double adventure, inward and outward; I never imagined that within a single year a person's understanding could be changed to such a degree. After we parted, I began, in the spirit of wanting to keep trying, to read Mishima's novels, to watch Tatsuki Fujimoto's manga, to listen over and over to Nightwish and Fulushou — until at last they pierced my dull shell and delivered a blow of beauty and pain that shook me to the core. I once liked to think: in this brief life, a full 5% of my time was spent with you. But as the base number grew, I found that 5% was nowhere near enough. Time slips by, yet I stand still, because without you my senses seem sealed shut. I only want to see the world through your eyes. For this I love your daily rhythms, your meals, the way you memorize vocabulary, your exercise habits.
+
+Writing this far, I worry deeply about whether I hold the same meaning for you. Very likely not. Perhaps even the exact opposite meaning (which would be far too awful). It's very possible that you are the final answer for me, while I am not yours. Or perhaps there is no such thing as a final answer (that too would be far too naive — we simply fall in love again and again, don't we?). Perhaps you will never again be willing to speak to me, or to have even the slightest connection with me.
+
+I don't know. But I do know that this confession is no impulse of the moment; it is a decision reached over months of thought. I am the moth that has circled long and knows full well what it does, at last plunging into the flame it most admires. There is no happier moment than a moth hurling itself into fire. At the very least, I have nothing to lose. Nor do I have any other choice: because right now, the moment I close my eyes, I can see you. Just as I could two years ago.
+
+In the days that have passed, much has happened in the world. This was a year in which illusions were shattered, the boyhood delusion of omnipotence bursting like a bubble, the drink left in the cup slowly revealing its bitter taste. Through the glass I saw clearly how hopeless the future will be without love and understanding. I once had it backwards and gravely underestimated their worth. The only salvation I can think of is to devote myself thoroughly, completely, to love. To you.
+
+Happy birthday. I love you.

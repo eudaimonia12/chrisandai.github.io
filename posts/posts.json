@@ -1,9 +1,155 @@
 [
   {
-    "slug": "why-i-study-philosophy-and-code",
-    "title": "Why I Study Both Philosophy and Code",
-    "date": "2026-01-15",
-    "excerpt": "A philosophy degree and a master's in IT sound like a strange pairing. Here's why I think they're the same discipline wearing different clothes.",
-    "tags": ["philosophy", "engineering", "essays"]
+    "slug": "journal-2025-07-05",
+    "title": "July 5, 2025",
+    "title_zh": "2025年7月5日",
+    "date": "2025-07-05",
+    "excerpt": "On emptiness, anxiety, and living on bought time in a foreign country — and why good novels are the only remedy.",
+    "excerpt_zh": "关于空虚、焦虑，以及在异国他乡用“买来的时间”生活，还有为什么优秀的小说是唯一的慰藉。",
+    "tags": ["diary"]
+  },
+  {
+    "slug": "leaving-shanghai",
+    "title": "Leaving Shanghai",
+    "title_zh": "出上海记",
+    "date": "2025-03-13",
+    "excerpt": "A homecoming delayed by two years: a midnight McDonald's, blue self-driving lights on a rebuilt road, and a city loved only through other people's words.",
+    "excerpt_zh": "一次推迟两年的返航：午夜的麦当劳、重建道路上幽蓝的自动驾驶灯，以及一座只能通过他人文字去爱的城市。",
+    "tags": ["prose", "Shanghai"]
+  },
+  {
+    "slug": "revisiting-the-border-city",
+    "title": "Revisiting the Border City",
+    "title_zh": "重访边城",
+    "date": "2024-04-12",
+    "excerpt": "A dusk hike up Victoria Peak that goes wrong, and unknowingly retraces Eileen Chang's daily walk to the University of Hong Kong.",
+    "excerpt_zh": "一次入夜后走岔的太平山徒步，无意间重合了张爱玲当年在港大的上学路线。",
+    "tags": ["prose", "Hong Kong", "literature"]
+  },
+  {
+    "slug": "farewell-to-colleagues",
+    "title": "On the Last Day: Farewell, Colleagues",
+    "title_zh": "同事们再会",
+    "date": "2023-08-11",
+    "excerpt": "872 days at Specialized. A farewell letter that reads work as a group ride — and choosing, once again, the road less traveled.",
+    "excerpt_zh": "在 Specialized 的第 872 天。一封把工作比作团队骑行的告别信，以及再一次选择人迹罕至的那条路。",
+    "tags": ["work"]
+  },
+  {
+    "slug": "fools-day",
+    "title": "Fool's Day",
+    "title_zh": "愚人节",
+    "date": "2023-04-01",
+    "excerpt": "A short story: a grandfather, a bicycle, and a child, in a near future where a virus has wiped the internet from the face of the earth.",
+    "excerpt_zh": "一篇小说：在互联网被病毒从地球上抹去的近未来，一位祖父、一辆自行车和一个孩子。",
+    "tags": ["fiction"]
+  },
+  {
+    "slug": "reflection-i-gpt",
+    "title": "Reflection I: GPT",
+    "title_zh": "反思之一（GPT）",
+    "date": "2023-03-28",
+    "excerpt": "From Siri in seventh grade to ChatGPT: I'm not afraid of a future ruled by AI — I'm afraid we're too short-sighted to reach it.",
+    "excerpt_zh": "从初一时的 Siri 到 ChatGPT：我不担心被 AI 宰制的未来，我担心我们太短视，活不到那天。",
+    "tags": ["prose", "technology"]
+  },
+  {
+    "slug": "benjamin-on-kafka",
+    "title": "Benjamin on Kafka",
+    "title_zh": "本雅明论卡夫卡",
+    "date": "2023-03-10",
+    "excerpt": "\"Plenty of hope — only not for us.\" On Kafka's refuge, and to whom hope belongs.",
+    "excerpt_zh": "“有充分的希望——只不过不属于我们罢了。”论卡夫卡的避难所，以及希望究竟属于谁。",
+    "tags": ["prose", "literature"]
+  },
+  {
+    "slug": "wind",
+    "title": "Wind",
+    "title_zh": "风",
+    "date": "2023-03-05",
+    "excerpt": "Shanghai's spring wind is not physical damage but magic damage — a feline creature that toys with its prey.",
+    "excerpt_zh": "上海的春风不是物理伤害，而是魔法攻击——一只把玩猎物的猫科动物。",
+    "tags": ["prose", "Shanghai"]
+  },
+  {
+    "slug": "osmanthus-steam",
+    "title": "Osmanthus Steam",
+    "title_zh": "桂花蒸",
+    "date": "2022-09-20",
+    "excerpt": "Three readings of an Eileen Chang story before finally understanding a single phrase: the humid, fragrant days of early autumn.",
+    "excerpt_zh": "读了三遍张爱玲的小说，才终于读懂一个词：初秋潮湿而芬芳的那几天。",
+    "tags": ["prose", "literature"]
+  },
+  {
+    "slug": "summer",
+    "title": "Summer",
+    "title_zh": "夏日",
+    "date": "2022-07-15",
+    "excerpt": "A lawn, a shade tree, cicadas at eighty decibels, and \"Summertime Sadness\" on a speaker — a doorway back to childhood.",
+    "excerpt_zh": "一片草坪、一棵遮阴的树、80 分贝的蝉鸣，和扬声器里的 Summertime Sadness——一扇通往童年的门。",
+    "tags": ["prose"]
+  },
+  {
+    "slug": "land",
+    "title": "Land",
+    "title_zh": "土地",
+    "date": "2022-05-20",
+    "excerpt": "During the Shanghai lockdown: on the Chinese bond to the land, the machine of farming civilization, and daring to imagine alternatives.",
+    "excerpt_zh": "上海封城期间：论中国人与土地的羁绊、农耕文明的生产机器，以及敢于想象替代方案。",
+    "tags": ["prose"]
+  },
+  {
+    "slug": "a-moment-in-may",
+    "title": "A Moment in May",
+    "title_zh": "五月moment",
+    "date": "2022-05-04",
+    "excerpt": "A street garden of roses on West Nanjing Road, and the shapes of two strangers crouched to take a photo.",
+    "excerpt_zh": "南京西路一座开满蔷薇的街心花园，和一对蹲着拍照的陌生人的身影。",
+    "tags": ["prose"]
+  },
+  {
+    "slug": "world-book-day-2022",
+    "title": "World Book Day, 2022",
+    "title_zh": "2022世界读书日",
+    "date": "2022-04-23",
+    "excerpt": "Rereading Eileen Chang's essays during lockdown, and finding new recognition in words once dismissed as fussy and sentimental.",
+    "excerpt_zh": "封城期间重读张爱玲的散文，在曾被认为“婆婆妈妈”的文字里找到崭新的认同。",
+    "tags": ["prose", "literature"]
+  },
+  {
+    "slug": "dick-in-a-box",
+    "title": "Dick in a Box",
+    "title_zh": "Dick in a Box",
+    "date": "2022-11-28",
+    "excerpt": "A birthday confession, ten months and two weeks later. A moth that has circled long, at last plunging into the flame.",
+    "excerpt_zh": "十个月零两周之后的一封生日告白。一只盘旋已久的飞蛾，终于冲进那团火。",
+    "tags": ["prose"]
+  },
+  {
+    "slug": "genealogy-of-morals",
+    "title": "On Nietzsche's Genealogy of Morals",
+    "title_zh": "关于《论道德的谱系》",
+    "date": "2019-02-08",
+    "excerpt": "Master morality and slave morality, the inversion wrought by \"love,\" and the question Nietzsche points to but never answers.",
+    "excerpt_zh": "主人道德与奴隶道德、由“爱”实现的颠倒，以及尼采指出却从未回答的问题。",
+    "tags": ["academic", "philosophy"]
+  },
+  {
+    "slug": "brain-in-a-vat",
+    "title": "The Boundary of the Real in the Brain-in-a-Vat Problem",
+    "title_zh": "“钵中之脑”问题中真实的边界",
+    "date": "2019-02-08",
+    "excerpt": "Can a brain in a vat know it is one? On Putnam, reference, and the one thing that is real: the world is not false the way we imagine.",
+    "excerpt_zh": "钵中之脑能否意识到自己是钵中之脑？论普特南、指称，以及唯一真实的事：世界不以我们设想的方式虚假。",
+    "tags": ["academic", "philosophy"]
+  },
+  {
+    "slug": "poetic-turn-of-mimesis",
+    "title": "The Poetic Turn of Mimesis",
+    "title_zh": "摹仿说的诗学转向",
+    "date": "2019-02-08",
+    "excerpt": "How Aristotle freed art from technique and Plato's censure, turning \"mimesis\" from metaphysics toward an independent aesthetics.",
+    "excerpt_zh": "亚里士多德如何将艺术从技术与柏拉图的非难中解放，令“摹仿说”从形而上学转向独立的美学。",
+    "tags": ["academic", "aesthetics"]
   }
 ]

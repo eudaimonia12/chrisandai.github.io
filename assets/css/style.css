@@ -303,6 +303,49 @@ section { padding: 72px 0; }
 
 /* ---------- Article ---------- */
 .article { padding: 40px 0 80px; }
+.article-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-elevated);
+}
+.lang-toggle button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-toggle button:hover { color: var(--text); }
+.lang-toggle button.active { background: var(--accent); color: #fff; }
+
+.post-title-zh {
+  font-size: 0.62em;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 6px;
+}
+
+/* CJK-friendly typography for Mandarin content */
+.article-zh {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", var(--font-serif);
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+}
+h1[lang="zh"] { font-family: "Noto Serif SC", "Songti SC", "STSong", var(--font-serif); }
+
 .article-head { margin-bottom: 40px; }
 .article-head .post-date { color: var(--text-muted); font-size: 0.9rem; }
 .article-head h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 8px 0 12px; }
