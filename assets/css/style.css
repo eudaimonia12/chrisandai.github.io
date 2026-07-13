@@ -1,17 +1,19 @@
 /* ==========================================================================
    Chris Dai — Personal Site
-   Design: editorial, minimal, warm neutrals with a single accent.
+   Design: editorial, bold — lavender purple paired with a vivid green.
    ========================================================================== */
 
 :root {
-  --bg: #fbfaf7;
+  --bg: #f7f5ff;
   --bg-elevated: #ffffff;
-  --text: #1c1b19;
-  --text-muted: #6b665e;
-  --border: #e7e3db;
-  --accent: #b5533a;
-  --accent-soft: #f3e4de;
-  --shadow: 0 1px 2px rgba(28, 27, 25, 0.04), 0 8px 24px rgba(28, 27, 25, 0.06);
+  --text: #191428;
+  --text-muted: #665f7d;
+  --border: #e6e0f5;
+  --accent: #7c3aed;          /* bold lavender purple */
+  --accent-soft: #ece6fd;
+  --accent-2: #10b981;        /* vivid green */
+  --accent-2-soft: #d6f5e8;
+  --shadow: 0 1px 2px rgba(60, 40, 110, 0.05), 0 10px 30px rgba(60, 40, 110, 0.12);
   --radius: 14px;
   --maxw: 1080px;
   --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
@@ -19,14 +21,16 @@
 }
 
 [data-theme="dark"] {
-  --bg: #16150f;
-  --bg-elevated: #201e17;
-  --text: #f3efe6;
-  --text-muted: #a7a093;
-  --border: #322f26;
-  --accent: #e0876b;
-  --accent-soft: #33261f;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --bg: #131020;
+  --bg-elevated: #1d1830;
+  --text: #f1edfb;
+  --text-muted: #a79ec6;
+  --border: #2f2748;
+  --accent: #a78bfa;          /* lightened lavender for dark */
+  --accent-soft: #2a2247;
+  --accent-2: #34d399;        /* vivid green */
+  --accent-2-soft: #12352a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 12px 32px rgba(0, 0, 0, 0.45);
 }
 
 * { box-sizing: border-box; }
@@ -151,8 +155,8 @@ img { max-width: 100%; display: block; }
   transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
 }
 .btn:hover { text-decoration: none; transform: translateY(-1px); }
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { box-shadow: var(--shadow); }
+.btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; }
+.btn-primary:hover { box-shadow: var(--shadow); filter: saturate(1.15); }
 .btn-ghost { border-color: var(--border); color: var(--text); }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -168,7 +172,7 @@ section { padding: 72px 0; }
   letter-spacing: 0.16em;
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-2);
   font-family: var(--font-sans);
 }
 
@@ -198,15 +202,15 @@ section { padding: 72px 0; }
   aspect-ratio: 1;
   border-radius: 24px;
   background:
-    radial-gradient(120% 120% at 20% 10%, var(--accent-soft), transparent 60%),
-    linear-gradient(145deg, var(--bg-elevated), var(--bg));
+    radial-gradient(120% 120% at 85% 90%, var(--accent-2) 0%, transparent 55%),
+    linear-gradient(145deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--accent-2)));
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-serif);
   font-size: 5rem;
-  color: var(--accent);
+  color: #fff;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -254,7 +258,7 @@ section { padding: 72px 0; }
 .cv-contact a:hover { color: var(--accent); }
 
 .cv-block { margin-top: 44px; }
-.cv-block > .eyebrow { display: block; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--accent-soft); }
+.cv-block > .eyebrow { display: block; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--accent-2-soft); }
 
 .cv-entry { margin-bottom: 28px; }
 .cv-entry-head {
@@ -272,8 +276,8 @@ section { padding: 72px 0; }
 .cv-entry ul li { margin-bottom: 6px; color: var(--text-muted); }
 .badge {
   display: inline-block;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--accent-2-soft);
+  color: var(--accent-2);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 3px 10px;
