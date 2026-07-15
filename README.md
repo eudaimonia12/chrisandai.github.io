@@ -10,7 +10,8 @@ _(or your custom domain, once configured)_
 
 ```
 .
-├── index.html          # Home / landing
+├── index.html          # Home / landing (Projects section + "More about me")
+├── projects.html       # Project portfolio (detailed cards)
 ├── cv.html             # CV (as text, with a PDF download)
 ├── blog.html           # Essay listing
 ├── post.html           # Renders a single essay from Markdown (?p=slug)
@@ -26,10 +27,20 @@ _(or your custom domain, once configured)_
 └── assets/
     ├── css/style.css   # All styling (light + dark themes)
     ├── js/             # main.js, blog.js, photos.js, contact.js
-    └── img/photos/     # Image files for the gallery
+    ├── img/photos/     # Image files for the gallery
+    └── img/projects/   # Project screenshots / previews
 ```
 
 ## Everyday tasks
+
+### Add / edit a project
+Projects live directly in `projects.html` as `<article class="project">` blocks,
+with a matching compact card on the home page (`index.html`). Each detailed card
+has four labelled facts — **Problem, Stack, My contribution, Outcome** — plus
+`Source code` and `Live demo` links and a preview image in `assets/img/projects/`.
+Duplicate an existing block (e.g. `#safeguardnz`, `#travel-blog`, `#spawtify`),
+swap the text/links, and drop a screenshot (PNG/JPG/SVG) into
+`assets/img/projects/`. Full write-up PDFs live in `assets/reports/`.
 
 ### Add a blog post / essay (bilingual)
 Each essay has an English file and a Mandarin file that share one `slug`. A

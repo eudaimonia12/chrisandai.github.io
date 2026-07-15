@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Chris Dai</title>
+  <meta name="description" content="Selected projects by Chris Dai — full-stack, cloud and AI. Problem, stack, contribution and outcome for each, with source code and demos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Chris&nbsp;Dai</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+        <button class="nav-toggle" data-nav-toggle aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Projects</h1>
+        <p>Selected work across full-stack development, cloud architecture and AI. For each project: the problem, the stack, what I built, and the outcome — with source code and demos where available.</p>
+      </div>
+    </div>
+
+    <div class="container" style="padding-bottom:80px;">
+      <div class="projects-list">
+
+        <!-- ============ PROJECT 1 — SafeGuardNZ (flagship, real) ============ -->
+        <article class="project reveal" id="safeguardnz">
+          <div class="project-media">
+            <img src="assets/img/projects/safeguardnz.svg" alt="SafeGuardNZ claims dashboard: auto-extracted documents, confidence score and an AI assistant" />
+            <div class="project-badges"><span class="badge-solid">&#127942; 1st Place</span></div>
+          </div>
+          <div class="project-body">
+            <h3>SafeGuardNZ — AI Insurance Claims Platform</h3>
+            <p class="project-meta">University of Auckland &times; AWS New Zealand · Jul – Nov 2025 · Team lead</p>
+            <div class="project-tags">
+              <span class="tag">AWS Bedrock</span>
+              <span class="tag">Amazon Textract</span>
+              <span class="tag">Node.js / Express</span>
+              <span class="tag">MongoDB Atlas</span>
+              <span class="tag">AWS Cognito</span>
+              <span class="tag">AWS Amplify</span>
+            </div>
+            <dl class="project-facts">
+              <div>
+                <dt>Problem</dt>
+                <dd>The client processes thousands of insurance claims a month, each needing manual review of several document types. The team was bogged down re-keying data and validating policies by hand — slowing decisions and hurting customer experience. AWS was already in use for secure document storage, so the brief was to automate classification, extraction and validation while keeping a human in the loop for low-confidence cases.</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Amazon Textract (document OCR), Amazon Bedrock (LLM reasoning) and custom ML models for financial data extraction with confidence scoring; Node.js / Express REST API; MongoDB Atlas; AWS Cognito for auth; deployed on AWS Amplify.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>Led the five-person team (&ldquo;Ministry of Iced Tea&rdquo;) and <strong>architected the multi-layer AI system</strong>; built the Node.js/Express backend and REST API layer and the auth/data integrations. Delivered guided document upload, real-time extraction of dates &amp; amounts, a confidence-score agent that flags key issues for reviewers, an admin dashboard, automated email notifications and a floating AI support chatbot. Presented to AWS engineers and business stakeholders at the AWS Auckland offices.</dd>
+              </div>
+              <div>
+                <dt>Outcome</dt>
+                <dd><strong>Won 1st place</strong> — selected as the 2025 Semester Two winner of the UoA &times; AWS Innovation Challenge internship. The platform cuts back-and-forth review time, eliminates manual calculation errors, and scales to handle claim-volume spikes.</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a class="btn btn-primary" href="https://github.com/sni026/Insurance-Claim-Automation-MERN-AWS" target="_blank" rel="noopener">Source code</a>
+              <a class="btn btn-ghost" href="https://ministryoficedtea.com/" target="_blank" rel="noopener">Live demo</a>
+              <a class="btn btn-ghost" href="assets/reports/safeguardnz-poster.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============ PROJECT 2 — Travel Blog (SvelteKit) ============ -->
+        <article class="project reveal" id="travel-blog">
+          <div class="project-media">
+            <img src="assets/img/projects/travel-blog.svg" alt="Wanderlust travel blog: a searchable feed of article cards with cover images and likes" />
+          </div>
+          <div class="project-body">
+            <h3>Wanderlust — Full-Stack Travel Blog</h3>
+            <p class="project-meta">University of Auckland · COMPSCI 718 / 719 group project · 2024 · Full-stack (Articles lead)</p>
+            <div class="project-tags">
+              <span class="tag">SvelteKit</span>
+              <span class="tag">Node.js / Express</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">TinyMCE</span>
+              <span class="tag">Java Swing</span>
+            </div>
+            <dl class="project-facts">
+              <div>
+                <dt>Problem</dt>
+                <dd>Build a modern blog where travellers can publish, search and discuss adventures — with articles, comments, likes and user accounts — plus a separate desktop admin tool for managing content and users.</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>SvelteKit front end (component-based, ~16 pages / 20 components), a Node.js / Express REST API with cookie-based auth middleware, and SQLite behind a DAO layer with Yup validation. A Java Swing app gives administrators user management via the same API.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>Led the ER / database design, then owned the <strong>Articles</strong> entity end-to-end: built the <code>Article</code> and <code>ArticleCard</code> components, the articles DAO (SQL <code>JOIN</code>s to attach authors) and the full REST API (GET / POST / PATCH / DELETE with auth-guarded routes). Self-taught and integrated the <strong>TinyMCE</strong> rich-text editor and <strong>Multer</strong> image uploads.</dd>
+              </div>
+              <div>
+                <dt>Outcome</dt>
+                <dd>Shipped a working full-stack blog with rich-text authoring, image uploads and article search. A disciplined Git branching strategy (develop / release before main) kept the four-person team's <code>main</code> branch conflict-free throughout.</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a class="btn btn-primary" href="assets/reports/travel-blog-report.pdf" target="_blank" rel="noopener">Read the report (PDF)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============ PROJECT 3 — Spawtify ============ -->
+        <article class="project reveal" id="spawtify">
+          <div class="project-media">
+            <img src="assets/img/projects/spawtify.svg" alt="Spawtify map: animal sighting pins, a user-drawn roaming area, and a sighting popup" />
+          </div>
+          <div class="project-body">
+            <h3>Spawtify — Community Animal-Spotting Platform</h3>
+            <p class="project-meta">University of Auckland · Group project · 2025 · Full-stack</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Leaflet</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Node.js / Express</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">AWS S3</span>
+            </div>
+            <dl class="project-facts">
+              <div>
+                <dt>Problem</dt>
+                <dd>Neighbourhoods have no shared way to log and find the animals around them — lost pets, wildlife and strays. Existing tools like eBird are built for specialists; Spawtify makes it easy for anyone to record and discover sightings on a map, helping reunite lost pets and build urban-ecology awareness.</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>React + React-Leaflet interactive maps styled with Tailwind CSS; a Node.js / Express REST API; MongoDB (Users, Animals, Spots collections); AWS S3 for user photos via pre-signed URLs; JWT + bcrypt auth; a Vitest test suite; auto-deployed to Render on every merge to <code>main</code>.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>Delivered the platform's core geographic features: <strong>dynamic, user-drawn roaming areas</strong> on the map (replacing a rigid pre-defined &ldquo;Areas&rdquo; model), <strong>real-time geocoding</strong> to turn addresses into coordinates, and <strong>secure cloud image storage</strong> — moving uploads from local Multer storage to S3 pre-signed URLs. Wrote backend APIs and Vitest coverage for auth, CRUD and S3/geo handling.</dd>
+              </div>
+              <div>
+                <dt>Outcome</dt>
+                <dd>A live, map-centric platform where users browse sightings, report animals with photos, and trace pets' roaming areas — deployed and continuously delivered on Render, with a test suite guarding core flows.</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a class="btn btn-primary" href="https://spawtify.onrender.com/" target="_blank" rel="noopener">Live demo</a>
+              <a class="btn btn-ghost" href="assets/reports/spawtify-report.pdf" target="_blank" rel="noopener">Read the report (PDF)</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span data-year>2026</span> Chris Dai.</span>
+      <div class="footer-social">
+        <a href="https://github.com/eudaimonia12" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/chiandai" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:chris.dai2023@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

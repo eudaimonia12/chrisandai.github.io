@@ -18,6 +18,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="photos.html">Photos</a></li>
@@ -45,8 +46,8 @@
             This is where I keep my work, my writing and the things I see.
           </p>
           <div class="hero-actions">
-            <a href="cv.html" class="btn btn-primary">View my CV</a>
-            <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+            <a href="projects.html" class="btn btn-primary">View projects</a>
+            <a href="cv.html" class="btn btn-ghost">Read my CV</a>
           </div>
         </div>
         <div class="portrait reveal" aria-hidden="true">
@@ -55,15 +56,75 @@
       </div>
     </section>
 
+    <!-- ===== Projects (prominent) ===== -->
     <section class="container">
-      <p class="eyebrow reveal">Explore</p>
-      <h2 class="section-title reveal">Three ways in</h2>
-      <p class="section-sub reveal">Whatever brought you here, start with one of these.</p>
+      <p class="eyebrow reveal">Selected work</p>
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-sub reveal">Full-stack, cloud and AI — the problem, my role, and the result.</p>
+      <div class="cards">
+        <div class="card project-mini reveal">
+          <h3>SafeGuardNZ <span class="badge">1st place</span></h3>
+          <p class="project-meta" style="margin:0 0 10px;">AI insurance claims platform · UoA &times; AWS</p>
+          <p>A cloud-native platform that reads claim documents with Textract + Bedrock and auto-populates forms, keeping a human in the loop for low-confidence cases.</p>
+          <div class="project-tags">
+            <span class="tag">AWS Bedrock</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <div class="mini-links">
+            <a href="projects.html#safeguardnz">Details &rarr;</a>
+            <a href="https://github.com/sni026/Insurance-Claim-Automation-MERN-AWS" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+        <div class="card project-mini reveal">
+          <h3>Wanderlust</h3>
+          <p class="project-meta" style="margin:0 0 10px;">Full-stack travel blog · SvelteKit</p>
+          <p>A modern travel blog with rich-text authoring, image uploads, comments and likes. I led the database design and owned the Articles feature end-to-end.</p>
+          <div class="project-tags">
+            <span class="tag">SvelteKit</span>
+            <span class="tag">Express</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <div class="mini-links">
+            <a href="projects.html#travel-blog">Details &rarr;</a>
+            <a href="assets/reports/travel-blog-report.pdf" target="_blank" rel="noopener">Report</a>
+          </div>
+        </div>
+        <div class="card project-mini reveal">
+          <h3>Spawtify</h3>
+          <p class="project-meta" style="margin:0 0 10px;">Community animal-spotting map · React</p>
+          <p>A map-based platform for logging and finding neighbourhood animals. I built the map roaming areas, geocoding and S3 image storage.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Leaflet</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <div class="mini-links">
+            <a href="projects.html#spawtify">Details &rarr;</a>
+            <a href="https://spawtify.onrender.com/" target="_blank" rel="noopener">Live</a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="margin-top:34px;">
+        <a href="projects.html" class="btn btn-primary">View all projects</a>
+      </div>
+    </section>
+
+    <!-- ===== More about me ===== -->
+    <section class="container">
+      <p class="eyebrow reveal">More about me</p>
+      <h2 class="section-title reveal">Beyond the projects</h2>
+      <p class="reveal muted" style="font-size:1.1rem; line-height:1.7; max-width:70ch; margin-bottom:40px;">
+        I'm a University of Auckland Master of IT graduate with hands-on experience across full-stack development,
+        cloud architecture and AI integration. My background spans web and software development, complemented by over
+        three years in the bicycle industry — online marketing, B2B sales and market development. Away from the screen,
+        I write essays and take photographs.
+      </p>
       <div class="cards">
         <a href="cv.html" class="card reveal">
           <div class="card-icon">&#128188;</div>
           <h3>Curriculum Vitae</h3>
-          <p>Education, skills and experience.</p>
+          <p>Education, skills and experience — with links to the work behind them.</p>
           <span class="card-link">Read the CV &rarr;</span>
         </a>
         <a href="blog.html" class="card reveal">
@@ -80,24 +141,13 @@
         </a>
       </div>
     </section>
-
-    <section class="container narrow">
-      <p class="eyebrow reveal">About</p>
-      <h2 class="section-title reveal">A short introduction</h2>
-      <p class="reveal muted" style="font-size:1.12rem; line-height:1.75;">
-        I'm a University of Auckland Master of IT graduate with hands-on experience across full-stack development, cloud architecture
-        and AI integration. My background spans web and software development,
-        complemented by over three years in bicycle industry, responsible for online marketing, B2B sales and market
-        development. I combine a technical stack with client-facing skills — equally
-        at home building solutions and communicating their value to broader audiences.
-      </p>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>&copy; <span data-year>2026</span> Chris Dai.</span>
       <div class="footer-social">
+        <a href="https://github.com/eudaimonia12" target="_blank" rel="noopener">GitHub</a>
         <a href="https://linkedin.com/in/chiandai" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:chris.dai2023@outlook.com">Email</a>
       </div>
