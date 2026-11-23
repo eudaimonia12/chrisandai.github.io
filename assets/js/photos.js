@@ -36,39 +36,38 @@
 
     gallery.innerHTML = photos
       .map(
-        (p, i) => `<figure data-index="${i}">
-          <img src="${escapeHtml(p.src)}" alt="${escapeHtml(p.alt || p.caption || "Photograph")}" loading="lazy" />
+        (p, i) => `<figure>
+          <button type="button" data-index="${i}">
+            <img src="${escapeHtml(p.src)}" alt="${escapeHtml(p.alt || p.caption || "Photograph")}" loading="lazy" />
+          </button>
           ${p.caption ? `<figcaption>${escapeHtml(p.caption)}</figcaption>` : ""}
         </figure>`
       )
       .join("");
 
-    function openLightbox(i) {
-      const p = photos[i];
+    let opener;
+
+    function openLightbox(button) {
+      const p = photos[Number(button.dataset.index)];
       if (!p) return;
+      opener = button;
       lbImg.src = p.src;
       lbImg.alt = p.alt || p.caption || "Photograph";
       lbCaption.textContent = p.caption || "";
-      lightbox.classList.add("open");
-      lightbox.setAttribute("aria-hidden", "false");
+      lightbox.showModal();
       document.body.style.overflow = "hidden";
     }
 
-    function closeLightbox() {
-      lightbox.classList.remove("open");
-      lightbox.setAttribute("aria-hidden", "true");
-      document.body.style.overflow = "";
-    }
-
-    gallery.querySelectorAll("figure").forEach((fig) => {
-      fig.addEventListener("click", () => openLightbox(Number(fig.dataset.index)));
+    gallery.querySelectorAll("button").forEach((button) => {
+      button.addEventListener("click", () => openLightbox(button));
     });
-    lbClose.addEventListener("click", closeLightbox);
+    lbClose.addEventListener("click", () => lightbox.close());
     lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) closeLightbox();
+      if (e.target === lightbox) lightbox.close();
     });
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeLightbox();
+    lightbox.addEventListener("close", () => {
+      document.body.style.overflow = "";
+      opener?.focus();
     });
   });
 })();

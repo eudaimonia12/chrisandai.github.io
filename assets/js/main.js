@@ -1,4 +1,4 @@
-/* Shared behaviour: theme toggle, mobile nav, active links, reveal on scroll */
+/* Shared theme, navigation and footer year. */
 (function () {
   "use strict";
 
@@ -17,7 +17,7 @@
 
   function updateToggleIcon(theme) {
     document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
-      btn.textContent = theme === "dark" ? "\u2600\uFE0F" : "\u263E";
+      btn.textContent = theme === "dark" ? "\u2600\uFE0E" : "\u263E";
       btn.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
     });
   }
@@ -35,38 +35,36 @@
 
     // Mobile nav
     const toggle = document.querySelector("[data-nav-toggle]");
-    const links = document.querySelector(".nav-links");
+    const links = document.getElementById("main-nav");
     if (toggle && links) {
-      toggle.addEventListener("click", () => links.classList.toggle("open"));
-      links.querySelectorAll("a").forEach((a) =>
-        a.addEventListener("click", () => links.classList.remove("open"))
-      );
+      function setMenuOpen(open) {
+        links.classList.toggle("open", open);
+        toggle.setAttribute("aria-expanded", String(open));
+      }
+
+      toggle.addEventListener("click", () => {
+        const open = !links.classList.contains("open");
+        setMenuOpen(open);
+        if (open) links.querySelector("a")?.focus();
+      });
+      links.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenuOpen(false));
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && links.classList.contains("open")) {
+          setMenuOpen(false);
+          toggle.focus();
+        }
+      });
     }
 
     // Active nav link
     const path = location.pathname.split("/").pop() || "index.html";
-    document.querySelectorAll(".nav-links a").forEach((a) => {
-      const href = a.getAttribute("href");
-      if (href === path || (path === "" && href === "index.html")) a.classList.add("active");
-    });
-
-    // Reveal on scroll
-    const revealables = document.querySelectorAll(".reveal");
-    if ("IntersectionObserver" in window && revealables.length) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("in");
-              io.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.12 }
-      );
-      revealables.forEach((el) => io.observe(el));
-    } else {
-      revealables.forEach((el) => el.classList.add("in"));
+    const activePage = path === "post.html" ? "blog.html" : path;
+    const activeLink = links?.querySelector(`a[href="${CSS.escape(activePage)}"]`);
+    if (activeLink) {
+      activeLink.classList.add("active");
+      activeLink.setAttribute("aria-current", path === "post.html" ? "location" : "page");
     }
 
     // Footer year

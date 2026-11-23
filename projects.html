@@ -7,16 +7,15 @@
   <meta name="description" content="Selected projects by Chris Dai — full-stack, cloud and AI. Problem, stack, contribution and outcome for each, with source code and demos." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a href="index.html" class="brand">Chris&nbsp;Dai</a>
-      <nav>
-        <ul class="nav-links">
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="main-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="cv.html">CV</a></li>
@@ -25,9 +24,9 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div style="display:flex; align-items:center; gap:8px;">
+      <div class="nav-actions">
         <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
-        <button class="nav-toggle" data-nav-toggle aria-label="Open menu">
+        <button class="nav-toggle" data-nav-toggle aria-controls="main-nav" aria-expanded="false" aria-label="Menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
@@ -37,20 +36,18 @@
   <main>
     <div class="page-head">
       <div class="container">
-        <p class="eyebrow">Portfolio</p>
         <h1>Projects</h1>
         <p>Selected work across full-stack development, cloud architecture and AI. For each project: the problem, the stack, what I built, and the outcome — with source code and demos where available.</p>
       </div>
     </div>
 
-    <div class="container" style="padding-bottom:80px;">
+    <div class="container page-content">
       <div class="projects-list">
 
         <!-- ============ PROJECT 1 — SafeGuardNZ (flagship, real) ============ -->
-        <article class="project reveal" id="safeguardnz">
+        <article class="project" id="safeguardnz">
           <div class="project-media">
             <img src="assets/img/projects/safeguardnz.svg" alt="SafeGuardNZ claims dashboard: auto-extracted documents, confidence score and an AI assistant" />
-            <div class="project-badges"><span class="badge-solid">&#127942; 1st Place</span></div>
           </div>
           <div class="project-body">
             <h3>SafeGuardNZ — AI Insurance Claims Platform</h3>
@@ -90,7 +87,7 @@
         </article>
 
         <!-- ============ PROJECT 2 — Travel Blog (SvelteKit) ============ -->
-        <article class="project reveal" id="travel-blog">
+        <article class="project" id="travel-blog">
           <div class="project-media">
             <img src="assets/img/projects/travel-blog.svg" alt="Wanderlust travel blog: a searchable feed of article cards with cover images and likes" />
           </div>
@@ -129,7 +126,7 @@
         </article>
 
         <!-- ============ PROJECT 3 — Spawtify ============ -->
-        <article class="project reveal" id="spawtify">
+        <article class="project" id="spawtify">
           <div class="project-media">
             <img src="assets/img/projects/spawtify.svg" alt="Spawtify map: animal sighting pins, a user-drawn roaming area, and a sighting popup" />
           </div>
